@@ -56,6 +56,59 @@
         <button class="form__button" type="button" data-modal-open>Zamów usługę</button>
       </div>
     </section>
+    <div class="backdrop is-hidden" data-modal>
+
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg width="17" height="17">
+          <use href="./images/icons.svg#icon-close"></use></svg></button>
+
+<form class="contact__form" name="contact__form" autocomplete="on" validate>
+
+  <h3 class="form__heading">Zostaw swoje dane w formularzu poniżej</h3>
+
+  <div class="form__icons">
+
+<label class="form__label">Imię</label>  
+<div class="form__svg">
+  <input class="form__name" type="text" name="name" required>
+  <svg class="form__icons-svg" height="18" width="18">
+    <use href="./images/icons.svg#icon-form-name"></use></svg>
+</div>
+</div>
+<div class="form__icons">
+
+<label class="form__label">Telefon </label>
+  <input class="form__telephone" type="tel" name="phone_number" minlength="9" maxlength="9" placeholder="">
+
+ </div>
+
+  <div class="form__icons">
+
+  <label class="form__label">Email  </label>
+    <input class="form__email" type="email" name="email" required>
+
+  </div>
+
+  <label class="form__label">Komentarz  </label>
+
+   <textarea class="form__comment" name="comment" rows="20" cols="20" placeholder="Wprowadź tekst"></textarea>
+
+ 
+  <div class="form__checkbox-box">
+  <input class="form__checkbox" type="checkbox" name="accept" value="agreement" check required/>
+  <label class="form__label form__label--link" >
+    Oświadczam iż akceptuję <a class="form__link" href="">Regulamin</a> i <a class="form__link" href="">Politykę Prywatności.</a>    
+  </label>
+
+</div>  
+</br>
+    <button class="form__button form__button--send" type="submit">Wyślij</button>
+
+  </form>
+
+</div>
+    </div>
 
    <main class="container">
     <section class="articles">
@@ -386,48 +439,6 @@
     </address>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-
-      <div class="modal">
-        <button class="close-btn" data-modal-close>
-          <svg width="17" height="17">
-          <use href="./images/icons.svg#icon-close"></use></svg></button>
-
-<form class="contact__form" name="contact__form" autocomplete="on" validate>
-
-  <h3 class="form__heading">Zostaw swoje dane w formularzu poniżej</h3>
-
-<label class="form__label">Imię
-  <input class="form__name" type="text" name="name" required>
-</label>
-
-<label class="form__label">Telefon
-  <input class="form__telephone" type="tel" name="phone_number" minlength="9" maxlength="9">
-  </label>
-
-  <label class="form__label">Email
-    <input class="form__email" type="email" name="email" required>
-    </label>
-
-  <label class="form__label">Komentarz
-   <textarea class="form__comment" name="comment" rows="20" cols="20" placeholder="Wprowadź tekst"></textarea>
-  </label>
-
- 
-  <div class="form__checkbox-box">
-  <input class="form__checkbox" type="checkbox" name="accept" value="agreement" check required/>
-  <label class="form__label form__label--link" >
-    Oświadczam iż akceptuję <a class="form__link" href="">Regulamin</a> i <a class="form__link" href="">Politykę Prywatności.</a>    
-  </label>
-
-</div>  
-</br>
-    <button class="form__button form__button--send" type="submit">Wyślij</button>
-
-  </form>
-
-</div>
-    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
