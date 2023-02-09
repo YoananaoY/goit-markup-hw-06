@@ -523,6 +523,10 @@ nav {
   column-gap: 30px;
   padding: 0;
 }
+.description__container {
+  position: relative;
+  background-color: #ffffff;
+}
 
 .portfolio__item {
   position: relative;
